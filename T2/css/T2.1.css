@@ -1,0 +1,60 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.header{
+	height: 50px;
+	line-height: 50px;
+	background-image: url(../img/images1/ad.png);
+	background-repeat: no-repeat;
+	background-position: 150px;
+}
+.header h1{
+	width: 12.5rem;
+	text-align: center;
+	background: #1e1015;
+	color: #ffffff;
+}
+.nav{
+	background: #0012ff;
+	color: #ffffff;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 20px;
+}
+.nav ul{
+	overflow: hidden;
+	list-style-type: none;
+}
+.nav li{
+	float: left;
+	width: 3.125rem;
+	color: #ff3301;
+	font-size: 12px;
+	
+}
+.nav li a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/*媒体查询*/
+/* ipad分辨率 */
+@media all and(max-width:768px){
+	.nav{
+		background: #ff00ff;
+	}
+}
+@media all and(max-width:480px){
+	.nav{
+		background: #ffff00;
+	}
+	.nav{
+		display: none;
+	}
+}
+@media all and(max-width:240px){
+	.nav{
+		display: none;
+	}
+}

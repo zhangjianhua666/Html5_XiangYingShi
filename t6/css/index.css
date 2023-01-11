@@ -1,0 +1,442 @@
+/* 变黑白 */
+/* *{
+	filter: grayscale(1);
+} */
+div[class^="grid-cell"] {
+	margin: 0px;
+}
+
+nav {
+	display: block;
+	margin: 0px;
+}
+
+/*设置顶部的样式*/
+#header {
+	width: 100%;
+	height: 60px;
+}
+
+.header__content {
+	position: fixed;
+	/*绝对定位*/
+	top: 0px;
+	left: 0px;
+	box-shadow: 0px 2px 10px 3px #000000;
+	z-index: 100;
+	opacity: 0.9;
+	background-color: #333333;
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	color: #ffffff;
+
+}
+
+/*
+			设置页眉的样式
+			*/
+.header-logo {
+	height: 60px;
+}
+
+.header-logo__img {
+	height: 48px;
+	width: 48px;
+}
+
+.header-logo__link {
+	font-size: 1.3em;
+	color: #ffffff;
+}
+
+.header-nav {
+	padding: 0px;
+}
+
+.header-nav__item {
+	width: 100%;
+}
+
+.header-nav__item:hover {
+	background-color: #026873;
+	transition: all 600ms linear 0s;
+}
+
+.header-nav__link {
+	color: #ffffff;
+}
+
+/*顶部功能区*/
+.header-toolbar {
+	width: 15.625rem;
+	height: 30px;
+	line-height: 32px;
+	background-color: #000000;
+	/* 设置底边圆角 */
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	overflow: hidden;
+	/*内容溢出自动隐藏*/
+}
+
+.header-toolbar:hover {
+	height: 35px;
+	/*设置样式过渡动画*/
+	transition: all 600ms linear 0s;
+}
+
+.header-toolbar__item {
+	/*设a标签为行内样式*/
+	display: inline;
+	margin: 0px 3%;
+	color: #808080;
+	font-size: 0.7em;
+}
+
+.header-toolbar__item:hover {
+	color: #ffffff;
+}
+
+/*广告部分*/
+
+body {
+	/*渐变阴影*/
+	background: linear-gradient(#899678, #ffffff);
+	/*背景重复*/
+	background-repeat: no-repeat;
+
+}
+
+#content {
+	width: 85%;
+	margin: 0px auto;
+}
+
+.content-top {
+	margin: 10px 0px;
+
+}
+
+.banner {
+	width: 100%;
+}
+
+.banner__title {
+	text-align: left;
+	margin: 0px 0px 10px 10px;
+}
+
+.banner__content {
+	box-shadow: 0 0 10px #000000;
+	/*阴影*/
+	border-radius: 10px;
+	/*圆角*/
+	overflow: hidden;
+	/*隐藏超出部分*/
+	position: relative;
+	/*改成相对定位，变成子物体父容器*/
+	margin: 10px;
+	height: 370px;
+}
+
+.banner__link {
+	color: #ffffff;
+}
+
+.banner__img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.banner__text {
+	display: block;
+	position: absolute;
+	left: 10px;
+	bottom: 15px;
+	font-size: 1.1em;
+	width: 100%;
+}
+
+.banner__text--title {
+	display: block;
+	/*设置成块状标签，把后面的内容顶下去*/
+	font-size: 0.8em;
+	color: #ffffff;
+
+}
+
+.banner__text--button {
+	display: block;
+	position: absolute;
+	right: 30px;
+	bottom: 10px;
+	background: #ffdf27;
+	line-height: 30px;
+	height: 30px;
+	text-align: center;
+	border: solid 1px #808080;
+	border-radius: 5px;
+	width: 100px;
+}
+
+.banner__text--button:hover {
+	background: #ffd700;
+}
+
+.hot {
+	margin: 0.3125rem;
+	flex-wrap: wrap;
+}
+
+.hot-item {
+	box-shadow: 0 0 10px #000000;
+	border-radius: 0.3125rem;
+	overflow: hidden;
+	background-color: #e1e1e1;
+	margin: 5px;
+}
+
+.hot-item:hover {
+	box-shadow: 5px 5px 10px 5px #000000;
+	transition: all 600ms ease;
+}
+
+.hot-item-img {
+	width: 100%;
+	height: auto;
+}
+
+.hot-item__title {
+	font-size: 1.1em;
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+.hot-item__text--button {
+	border-radius: 5px;
+	background-color: #282d41;
+	color: #ffffff;
+	padding: 5px;
+	font-size: 0.8em;
+
+
+}
+
+.hot-item__text--button:hover {
+	background-color: #ffd700;
+}
+
+.hot-item__discount {
+	border-radius: 5px;
+	background-color: #444444;
+	color: #e1e1e1;
+	padding: 5px;
+	font-size: 0.8em;
+
+}
+
+.hot-item__text {
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+	padding: 5px;
+}
+
+/* 中部导航区域 */
+.content-nav {
+	margin: 10px;
+}
+
+.content-nav li {
+	height: 30px;
+	line-height: 30px;
+	padding: 5px;
+	text-align: center;
+	color: #808080;
+}
+
+.content-nav__item {
+	border-radius: 15px;
+}
+
+.content-nav__item:hover {
+	background: #474644;
+	box-shadow: -3px 5px 10px #808080;
+
+	transition: all 600ms linear 0s;
+}
+
+/*悬停事件的a标签*/
+.content-nav__item:hover a {
+	color: #ffffff;
+}
+
+.content-nav__item--active {
+	background: #474644;
+	box-shadow: -3px 5px 10px #808080;
+	border-radius: 15px;
+	transition: all 600ms linear 0s;
+}
+
+.content-nav__item--active a {
+	color: #ffffff;
+}
+
+/* 游戏列表 */
+.game-list {
+	margin-top: 20px;
+	box-shadow: 0 0 10px 2px #262626;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.game-link {
+	display: block;
+	height: 60px;
+	line-height: 60px;
+	border-bottom: dashed 1px #333333;
+	background-color: #e1e1e1;
+}
+
+.game-link:hover {
+	background-color: #000000;
+}
+
+.game-item__img {
+	height: 60px;
+	width: 100px;
+}
+
+.game-item__img-opacity {
+	width: 100%;
+	height: 100%;
+	/* 透明度 */
+	opacity: 0.5;
+}
+
+.game-link:hover .game-item__img-opacity {
+	opacity: 1;
+	transition: all 600ms ease;
+}
+
+.game-link:hover .game-item__title,
+.game-link:hover .game-item__kind {
+	color: #ffffff;
+}
+
+.game-item__title {
+	width: 500px;
+	padding: 0px 5px;
+}
+
+.game-item__price {
+	width: 120px;
+	padding: 0px 10px;
+	text-align: center;
+}
+
+.game-item__price-button {
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #282d41;
+	color: #cccccc;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.game-item__price-button:hover {
+	background-color: #ff4400;
+	color: #ffffff;
+}
+.header-toolbar__item--hidden{
+	display: none;
+}
+@keyframes img_anim {
+	from{
+		transform: scale(1,1);
+	}
+	to{
+		transform: scale(1.5,1.5);
+	}
+}
+.banner__img:hover{
+	animation: img_anim 600ms linear 10ms alternate  infinite;
+}
+@media all and (max-width:800px) {
+	.header-nav__link--hidden {
+		display: none;
+	}
+
+	.header-toolbar {
+		display: inline-block;
+		width: 20px;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		margin: 0px 5px;
+	}
+
+	.header-toolbar:hover {
+		height: 130px;
+	}
+
+	.header-toolbar__item {
+		display: block;
+		width: 15px;
+		height: 32px;
+		line-height: 32px;
+		overflow: hidden;
+
+	}
+
+	.header-toolbar__item--hidden {
+		display: block;
+	}
+
+	.header-toolbar__link--hidden {
+		display: none;
+	}
+	.icon-shopping-cart{
+		display: block;
+		margin: 0px auto;
+	}
+	.banner__text--button{
+		display: none;
+	}
+	/* 新鲜事 */
+	#content{
+		width: 98%;
+	}
+	.banner__content{
+		height: auto;
+	}
+	.banner__text--title,.banner__text--bigtitle{
+		font-size: 0.4em;
+	}
+	/* 中部导航 */
+	.content-nav ul li:nth-of-type(even){
+		display: none;
+	}
+	.content-nav{
+		background-color: #111111;
+		border-radius: 0px;
+		overflow: hidden;
+	}
+	.content-nav__item--active{
+		border: 0px;
+		border-radius: 0px;
+	}
+	.content-nav__item:hover{
+		border-radius: 0px;
+	}
+	.game-item__icon{
+		display: none;
+	}
+	.game-item__kind{
+		display: none;
+	}
+	
+}

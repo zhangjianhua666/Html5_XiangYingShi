@@ -1,0 +1,44 @@
+body
+{
+	font-size: 12px;
+}
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+a img
+{
+	border: none;
+}
+#good
+{
+	width: 735px;
+}
+#good dl
+{
+	float: left;
+	border: 1px solid gray;
+	width: 350px;
+	height: 300px;
+	margin-right: 6px;
+	margin-bottom: 8px;
+	
+}
+#good dd
+{
+	line-height: 24px;
+}
+#good dl dd span.discount
+{
+	font-size: 16px;
+	color: #F60;
+}
+#good dl dd span.price
+{
+	text-decoration: line-through;
+}
+#good
+{
+	margin: 0rem,auto;
+}

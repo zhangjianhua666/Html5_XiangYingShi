@@ -1,0 +1,49 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.grid{
+display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+.grid-cell-1,.grid-cell-2,.grid-cell-3,.grid-cell-4{
+	/* 弹性的收缩比例 */
+	flex-shrink: 1;
+	padding: 10px;
+}
+.grid-cell-1{
+	flex-grow: 1;
+}
+.grid-cell-2{
+	flex-grow: 2;
+}
+.grid-cell-3{
+	flex-grow: 3;
+}
+.grid-cell-4{
+	flex-grow: 4;
+}
+.grid-cell-5{
+	flex-grow: 5;
+}
+.grid-cell-6{
+	flex-grow: 6;
+}
+.box-red{
+	background-color: #ff00ff;
+	min-height: 50px;
+	text-align: center;
+	width: 100%;
+	line-height: 50px;
+}
+.box-green{
+	background-color: #41f9a0;
+	min-height: 5px;
+	text-align: center;
+	width: 100%;
+	line-height: 50px;
+}
+#content .box-red{
+	height: 400px;
+}

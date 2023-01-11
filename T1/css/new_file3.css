@@ -1,0 +1,33 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.chima {
+	width: 760px;
+	margin: 0px auto;
+}
+
+.chima table {
+	border-collapse: collapse;
+	width: 100%;
+
+}
+
+.chima table,
+.chima table tr,
+.chima table td {
+	border: 1px solid #ff0000;
+}
+
+.chima table caption {
+	background: #ff8811;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.chima table th {
+	background-color: #ff0000;
+	color: #ffffff;
+}

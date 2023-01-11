@@ -1,0 +1,21 @@
+body.container{
+	display: flex;
+	flex-flow: row wrap; 
+}
+div.box{
+	width: 350px;
+	height: 214px;
+	background: #000000;
+	border: solid 100px;
+
+}
+div.b1{
+	border-image: url(../img/第二节/images/background.png);
+	background: url(../img/第一节/images/good1.jpg);
+}
+div.b2{
+	border-image-source: url(../img/第二节/images/background.png);
+	border-image-slice: 50;
+	border-image-repeat: round;
+	background: url(../img/第一节/images/good2.jpg);
+}

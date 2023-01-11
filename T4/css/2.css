@@ -1,0 +1,28 @@
+ul{
+    width: 300px;
+    list-style: none;
+}
+ui li{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #c3c3c3;
+    border-left: solid 1px #000000;
+    box-shadow: inset 0px 0px 15px #616161;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+@keyframes menu-anim {
+    to{
+        width: 200px;
+        background-color: #222222;
+        color: #ffffff;
+        box-shadow: 5px 5px 15px #000000;
+    }
+    
+}
+ui li:hover{
+    animation: menu-anim 600ms linear 10ms alternate infinite;
+}

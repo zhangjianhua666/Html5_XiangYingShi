@@ -1,0 +1,49 @@
+* {
+	margin: 0px;
+	padding: 0px;
+
+}
+
+body {
+	font-size: 12px;
+
+}
+
+a img {
+	border: none;
+}
+
+#good {
+	display: flex;
+}
+
+#good dl {
+	flex: 1;
+	flex-flow: row wrap;
+	width: 360px;
+	height: 300px;
+	margin-right: 60px;
+	margin-bottom: 8px;
+}
+
+img 
+{
+	/* 圆角 */
+	border-radius: 30px 10px;
+	/* 阴影 */
+	box-shadow: 5px 5px 10px #666666;
+}
+
+div#good dd 
+{
+	line-height: 24px;
+}
+div#good dd span.discount
+{
+	font-size: 16px;
+	color: #f60;
+}
+div#good dd span.price
+{
+	text-decoration: line-through;
+}

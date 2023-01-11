@@ -1,0 +1,118 @@
+.container{
+	display: flex;
+	flex-flow: row wrap;
+}
+.box{
+	width: 150px;
+	height: 150px;
+	transform-origin: top left;
+	opacity: 0.7;
+	color: #ffffff;
+	margin: 5px;
+}
+.orgin,.left,.center,.right,.flip{
+	background: #000000;
+	box-shadow: 0px 0px 10px #ff2221;
+}
+
+@keyframes box1 {
+	from{
+		background: #000000;
+		box-shadow: 0px 0px 10px #ff2221;
+		
+	}
+	50%{
+		background: #000000;
+		box-shadow: 0px 0px 10px #ff2221;
+		transform: scale(1.2,1.2);
+	}
+	75%{
+		background: #000000;
+		box-shadow: 0px 0px 10px #ff2221;
+		transform: scale(1.4,1.4);
+	}
+	to{
+		background: #000000;
+		box-shadow: 0px 0px 10px #ff2221;
+		transform: scale(1.5,1.5);
+	}
+}
+@keyframes box2 {
+	from{
+		background: #000000;
+		box-shadow: 0px 0px 10px #ff2221;
+		
+	}
+	50%{
+		background: #00fe00;
+		box-shadow: 0px 0px 10px #ff2221;
+	transform: translateX(20px) scaleX(0.5);
+	}
+	75%{
+		background: #00fe00;
+		box-shadow: 0px 0px 10px #ff2221;
+		transform: translateX(50px) scaleX(0.5);
+	}
+	to{
+		background: #00ff00;
+		box-shadow: 0px 0px 10px #ff2221;
+		transform: translateX(80px) scaleX(0.5);
+	}
+}
+@keyframes box3 {
+	from{
+		background: #000000;
+		box-shadow: 0px 0px 10px #ff2221;
+		
+	}
+	50%{
+		background: #000000;
+		box-shadow: 0px 0px 10px #ff2221;
+		transform: scaleY(0.4);
+	}
+	75%{
+		background: #000000;
+		box-shadow: 0px 0px 10px #ff2221;
+		transform: scaleY(0.6);
+	}
+	to{
+		background: #000000;
+		box-shadow: 0px 0px 10px #ff2221;
+		transform: scaleY(0.8);
+	}
+}
+@keyframes box4 {
+	from{
+		background: #000000;
+		box-shadow: 0px 0px 10px #ff2221;
+		
+	}
+	50%{
+		background: #000000;
+		box-shadow: 0px 0px 10px #ff2221;
+		transform: translateX(20px) scaleX(-1.0)
+	}
+	75%{
+		background: #000000;
+		box-shadow: 0px 0px 10px #ff2221;
+		transform: translateX(100px) scaleX(-1.0)
+	}
+	to{
+		background: #000000;
+		box-shadow: 0px 0px 10px #ff2221;
+		transform: translateX(180px) scaleX(-1.0)
+	}
+}
+
+.left:hover{
+	animation: box1 600ms linear 10ms alternate infinite;
+}
+.center:hover{
+	animation: box2 600ms linear 10ms alternate infinite;
+}
+.right:hover{
+	animation: box3 600ms linear 10ms alternate infinite;
+}
+.flip:hover{
+	animation: box4 600ms linear 10ms alternate infinite;
+}
